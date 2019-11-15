@@ -22,3 +22,12 @@ Para relacionar documentos:
       .populate('owner')    // 'owner' es el nombre del campo del modelo 'thing'
       .then(thing => console.log(thing))
     ```
+## Main points: seeding
+
+- _seed_ representa un archivo encargado de popular una Base de Datos con registros. Este archivo, por lo general:
+  * Incorpora los modelos involucrados en la operación
+  * Abre una conexión a la base de datos
+  * Realiza la inserción de los registros e informa del estado final
+  * Cierra la conexión a la Base de Datos
+
+- Al ser ajeno a la aplicación es necesario ejecutar el archivo de forma manual mediante Node: `node ./ruta/al/archivo`
