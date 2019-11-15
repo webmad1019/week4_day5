@@ -5,7 +5,7 @@
 > Node | Basic Authorization, Autentication & Sessions
 
 
-## Main points: document relationships
+## Main points: document relationships (populating)
 
 Para relacionar documentos:
 * **En el modelo**: indicar en la propiedad a relacionar `type: Schema.Types.ObjectId` y `ref: 'nombreModelo'`:
