@@ -1,0 +1,33 @@
+<div class="container">
+
+  <h1>Crear un nuevo libro</h1>
+
+  <div class="row justify-content-center">
+
+    <div class="col-md-8">
+
+      <form action="/books/add" method="POST">
+        <div class="form-group">
+          <label for="field1">Título</label>
+          <input type="text" class="form-control" id="field1" name="title">
+          <small class="form-text text-muted">¡Trabajamos con autores dignos!</small>
+        </div>
+        <div class="form-group">
+          <label for="field2">Autor/a</label>
+          <input type="text" class="form-control" id="field2" name="author">
+        </div>
+        <div class="form-group">
+          <label for="field3">Descripción</label>
+          <input type="text" class="form-control" id="field3" name="description">
+        </div>
+        <div class="form-group">
+          <label for="field4">Puntuación</label>
+          <input type="number" class="form-control" id="field4" name="rating">
+        </div>
+
+        <button type="submit" class="btn btn-dark">Crear libro</button>
+      </form>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="container">
+
+  <h1>Nuestros libros</h1>
+
+  <ul>
+
+    {{#each books}}
+    <li>{{this.title}} (<a href="/books/details/{{this._id}}">Ver detalles</a> | <a
+        href="/books/edit?bookId={{this._id}}">Editar</a> )
+    </li>
+    {{/each}}
+
+  </ul>
+
+</div>

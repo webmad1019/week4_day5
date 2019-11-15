@@ -1,0 +1,26 @@
+<div class="container">
+    {{#with book}}
+    <h1>Detalles de {{title}}</h1>
+
+    <div class="row">
+        <div class="col-md-8">
+            <article>
+                <h3>Sobre el libro</h3>
+                <p>Resúmen: {{description}}</p>
+                <hr>
+                <p>Calificación: {{rating}}/10 puntos</p>
+            </article>
+        </div>
+        <div class="col-md-4">
+            {{#each author}}
+            <h3>Sobre el autor/a</h3>
+            <p>{{this.name}} {{this.lastName}} ({{this.nationality}})</p>
+            <img src="{{this.pictureUrl}}" alt="{{this.name}} {{this.lastName}}">
+            {{/each}}
+
+        </div>
+    </div>
+
+    <a href="/books">Return</a>
+    {{/with}}
+</div>
